@@ -1,0 +1,17 @@
+{
+	"toys": {
+		"toy0": {
+			"name": "Racecar driver",
+			"price": "$59.99",
+			"url": "http://www.toysrus.com/graphics/media/trus/Aplusplus/2014/10_1_14/34443606/34443606-Disney-Cars-Toddler-Twin-Bed-Toy-Box-03.jpg",
+			"description": "Disney Pixar Cars Convertible Toddler to Twin Bed with Lights and ...",
+			"uid":"o263UJfXGMZ8qyya3ylyH9CAKzj1"
+		}
+	},
+	"users":{
+		"user1":{
+			"username":"a",
+			"uid":"o263UJfXGMZ8qyya3ylyH9CAKzj1"
+		}
+	}
+}

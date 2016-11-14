@@ -1,0 +1,80 @@
+@import "_slideout.scss";
+
+/**
+ * -------------------------------- Primary style
+ * --------------------------------
+ */
+
+*,
+*::after,
+*::before {
+  -moz-box-sizing    : border-box;
+  -webkit-box-sizing : border-box;
+  box-sizing         : border-box;
+}
+
+*::after,
+*::before {
+  content : '';
+}
+
+body {
+  color       : black;
+  background  : #FFF;
+  text-align  : center;
+  font-family : "Droid Sans",
+                sans-serif;
+  font-size   : 1.5em;
+}
+
+a {
+  color           : #89ba2c;
+  text-decoration : none;
+}
+
+.card {
+  margin-top: 1em;
+  border: 1px solid red;
+}
+
+.btn-info {
+  margin-top   : .5em;
+  margin-right : .25em;
+}
+
+// style for cards
+
+#movie-result h4 {
+  border-top : 1px solid black;
+  text-align : center;
+}
+
+.more-detail {
+  text-align : center;
+}
+
+// This fixes a spacing issue in the side panel slideout
+
+.cd-panel-content .col-xs-6 {
+  padding-right : 3px;
+  padding-left  : 0;
+
+  .movie-title {
+    text-align : left;
+
+    &:hover {
+      background-color: #c0c7cd;
+      cursor: pointer;
+    }
+  }
+}
+
+// this makes the modal prettier
+
+.modal-footer {
+  text-align : center;
+
+  .add-btn {
+    width : 50%;
+  }
+}

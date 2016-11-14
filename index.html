@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Toy Consignment Shop</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+
+  <body class="center">
+
+    <nav class="navbar navbar-default hide" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Toy Consignment Shop</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="" id="add-new-toy-link">Add New Toy</a>
+            </li>
+            <li>
+              <a href="" id="view-saved-toys-link">View Saved toys</a>
+            </li>
+            <li id="logout-container"></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container col-xs-4 col-xs-offset-4" id="login-container">
+      <h1 class="form-signin-heading">Login</h1>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <input type="text" id="inputUsername" class="form-control" placeholder="Username" required>
+      <button class="btn btn-lg btn-success col-xs-6" id="loginButton">Login</button>
+      <button class="btn btn-lg btn-primary col-xs-6" id="registerButton">Register</button>
+    </div>
+
+    <div class="container hide" id="search">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bs-component">
+            <div>
+              <label class="control-label" for="filter">Filter toys by name:</label>
+              <input type="text" id="search-title" class="input-small">
+              <button id="filter-btn" type="button" class="btn-sm btn-primary">Filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12" id="toy-container">
+        <div class="container" id="toy-result"></div>
+      </div>
+    </div>
+
+    <div class="container hide" id="add-new-toy">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bs-component">
+            <div>
+              <h3>Make new toy to add in stock</h3>
+              <label class="control-label" for="search">Look for image:</label>
+              <input type="text" id="search-img-title" class="input-small">
+              <button id="search-img-btn" type="button" class="btn-sm btn-primary">search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12" id="toy-pic-container">
+        <div class="container" id="toy-pic-result"></div>
+      </div>
+    </div>
+
+    <div class="cd-panel from-right">
+      <header class="cd-panel-header">
+        <h1>Edit Toy Detail</h1>
+        <a href="#0" class="cd-panel-close">Close</a>
+      </header>
+
+      <div class="cd-panel-container">
+        <div class="cd-panel-content">
+          <ul id="saved-toy-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+		<script src="/lib/bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/javascripts/firebase.js" charset="utf-8"></script>
+    <script src="/javascripts/firebaseAuth.js" charset="utf-8"></script>
+    <script src="/javascripts/firebaseUser.js" charset="utf-8"></script>
+    <script src="/javascripts/firebaseMethods.js" charset="utf-8"></script>
+    <script src="/javascripts/gsce.js" charset="utf-8"></script>
+    <script src="/javascripts/gsceMethods.js" charset="utf-8"></script>
+    <script src="/javascripts/main.js" charset="utf-8"></script>
+  </body>
+
+</html>
